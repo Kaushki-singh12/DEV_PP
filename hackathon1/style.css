@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0; 
+    
+    font-family: 'Poppins', sans-serif;
+}
+#banner{
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive ;
+}
+.banner-text p{
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition:color 0.5s;
+     
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position :absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transform: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+
+}
+.banner-btn a:hover{
+    color:#000;
+
+
+}
+.catogries{
+    padding-top: 50px;
+
+}
+.catogries .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+.catogries .col-3 img{
+    width:50px;
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+.testimocatogriesnial .col-3:hover{
+    transform: translateY(-10px);
+
+}
+.fa .fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+    
+}
+/* .col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+
+}*/
+.catogries1{
+    font-weight: 600;
+    color: #555;
+    font-size: 40px;
+    
+} 
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 42px;
+    font-family: 'Kaushan Script', cursive ;
+    color: #fff;
+    padding-top: 50px;
+
+}
+#banner1{
+    background:url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+}
+.small-container{
+    max-width: 1500px;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+.col-4{
+    flex-basis: 20%;
+    padding: 4px;
+    min-width: 50px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    transition: transform 0.8s;
+}
+.col-4 img{
+    width: 100%;
+    
+}
+.title{
+    text-align: center;
+    margin: 50px 100px 50px;
+    position: relative;
+    line-height: 80px;
+    color: rgba(241, 185, 0, 0.856);;
+    margin-top: 5px;
+    font-family: 'Kaushan Script', cursive ;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h4{
+    color: rgb(226, 213, 28);
+    font-size: 20px;
+
+}
+.col-4:hover{
+    transform: translateY(-5px);
+
+}
+#banner2{
+    background: url(images/homeremidies.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.title1{
+    text-align: center;
+    margin: 20px 100px 50px;
+    position: relative;
+    line-height: 80px;
+    color: rgba(219, 172, 16, 0.384);
+    margin-top: 10px;
+    font-family: 'Kaushan Script', cursive ;
+}
+.title1::after{
+    content: '';
+    background: #ff523b;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.col_2{
+    flex-basis: 20%;
+    padding: 4px;
+    min-width: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.8s;
+}
+.col_2 img{
+    width: 100%;
+    
+}
+.col_2:hover{
+    transform: translateY(-5px);
+
+}
+.col_2 h4{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive ;
+}
+#banner3{
+    background: rgb(15,7,42);
+    background: linear-gradient(90deg, rgba(15,7,42,1) 30%, rgba(9,121,86,1) 100%, rgba(0,212,255,1) 100%);background-size: cover;
+    background-position: center;
+    height: 117vh;
+}
+.body1{
+    font-family: Oxygen, sans-serif;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  grid-gap: 2rem;
+  justify-content: center;
+}
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray200);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+.card__image{
+    height: 12rem;
+    width: 100%; 
+    object-fit: cover;
+}
+.card__title{
+    padding: 1rem;
+    font-family: 'Kaushan Script', cursive ;
+}
+.card__description{
+    padding: 0 1rem;
+    color: rgba(240, 186, 11, 0.562);
+}
+.card__btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--clr-primary);
+    background: transparent;
+    color: var(--clr-primary);
+    border-radius: var(--radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+.card__btn:hover{
+    background: var(--clr-primary);
+    color: white;
+    transform: scale(1.02);
+}
+.ptag{
+    padding: 0 1rem;
+    font-family: 'Kaushan Script', cursive ;
+}
+.navbar{
+    display: flex;
+    /* align-items: center; */
+    padding: 0px;
+    margin-left:1150px;
+    }
+    nav{
+        text-align: right;
+   
+   }
+   .btn{
+    display: inline-block;
+    background: #d10a0a7c;
+    color: #fff;
+    padding: 8px 10px;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #6e6262;
+}
+#table{
+    table-layout: fixed ;
+    /* position: */
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "projectName": "jib",
+        "projectLink": "https://www.github.com/GoogleContainerTools/jib"
+    },
+    {
+        "projectName": "javacv",
+        "projectLink": "https://www.github.com/bytedeco/javacv"
+    },
+    {
+        "projectName": "shopping-management-system",
+        "projectLink": "https://www.github.com/zhanglei-workspace/shopping-management-system"
+    },
+    {
+        "projectName": "hope-boot",
+        "projectLink": "https://www.github.com/hope-for/hope-boot"
+    },
+    {
+        "projectName": "kotlin-examples",
+        "projectLink": "https://www.github.com/Kotlin/kotlin-examples"
+    },
+    {
+        "projectName": "maven",
+        "projectLink": "https://www.github.com/apache/maven"
+    },
+    {
+        "projectName": "docker-maven-plugin",
+        "projectLink": "https://www.github.com/spotify/docker-maven-plugin"
+    },
+    {
+        "projectName": "dockerfile-maven",
+        "projectLink": "https://www.github.com/spotify/dockerfile-maven"
+    },
+    {
+        "projectName": "TelegramBots",
+        "projectLink": "https://www.github.com/rubenlagus/TelegramBots"
+    },
+    {
+        "projectName": "jitpack.io",
+        "projectLink": "https://www.github.com/jitpack/jitpack.io"
+    }
+]

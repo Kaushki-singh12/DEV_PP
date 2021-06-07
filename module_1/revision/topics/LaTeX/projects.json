@@ -1,0 +1,42 @@
+[
+    {
+        "projectName": "marktext",
+        "projectLink": "https://www.github.com/marktext/marktext"
+    },
+    {
+        "projectName": "KaTeX",
+        "projectLink": "https://www.github.com/KaTeX/KaTeX"
+    },
+    {
+        "projectName": "Awesome-CV",
+        "projectLink": "https://www.github.com/posquit0/Awesome-CV"
+    },
+    {
+        "projectName": "PlotNeuralNet",
+        "projectLink": "https://www.github.com/HarisIqbal88/PlotNeuralNet"
+    },
+    {
+        "projectName": "milewski-ctfp-pdf",
+        "projectLink": "https://www.github.com/hmemcpy/milewski-ctfp-pdf"
+    },
+    {
+        "projectName": "MathJax",
+        "projectLink": "https://www.github.com/mathjax/MathJax"
+    },
+    {
+        "projectName": "resume",
+        "projectLink": "https://www.github.com/billryan/resume"
+    },
+    {
+        "projectName": "pandoc-latex-template",
+        "projectLink": "https://www.github.com/Wandmalfarbe/pandoc-latex-template"
+    },
+    {
+        "projectName": "vimtex",
+        "projectLink": "https://www.github.com/lervag/vimtex"
+    },
+    {
+        "projectName": "thuthesis",
+        "projectLink": "https://www.github.com/tuna/thuthesis"
+    }
+]

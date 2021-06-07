@@ -1,0 +1,42 @@
+[
+    {
+        "projectName": "storybook",
+        "projectLink": "https://www.github.com/storybookjs/storybook"
+    },
+    {
+        "projectName": "Ghost",
+        "projectLink": "https://www.github.com/TryGhost/Ghost"
+    },
+    {
+        "projectName": "discourse",
+        "projectLink": "https://www.github.com/discourse/discourse"
+    },
+    {
+        "projectName": "ember.js",
+        "projectLink": "https://www.github.com/emberjs/ember.js"
+    },
+    {
+        "projectName": "text-mask",
+        "projectLink": "https://www.github.com/text-mask/text-mask"
+    },
+    {
+        "projectName": "sharedrop",
+        "projectLink": "https://www.github.com/szimek/sharedrop"
+    },
+    {
+        "projectName": "ember-cli",
+        "projectLink": "https://www.github.com/ember-cli/ember-cli"
+    },
+    {
+        "projectName": "data",
+        "projectLink": "https://www.github.com/emberjs/data"
+    },
+    {
+        "projectName": "ember-simple-auth",
+        "projectLink": "https://www.github.com/simplabs/ember-simple-auth"
+    },
+    {
+        "projectName": "stimulus_reflex",
+        "projectLink": "https://www.github.com/hopsoft/stimulus_reflex"
+    }
+]
