@@ -2207,11 +2207,12 @@ process.umask = function() { return 0; };
 },{}],5:[function(require,module,exports){
 const axios = require('axios');
 const cheerio = require('cheerio');
+const { data } = require('cheerio/lib/api/attributes');
 const url = 'https://www.worldometers.info/coronavirus/';
 
 axios.get(url)
   .then(response => {
-    data = [];
+   let data = [];
     html=response.data;
     const $ = cheerio.load(html);
     $('#maincounter-wrap').each((i, elem) => {
@@ -2221,13 +2222,24 @@ axios.get(url)
       });
     });
     console.log(data);
+    let allCaseCount = document.querySelector(".allcasecount");
+    for(let i=0; i<data.length; i++){
+      let div = document.createElement("div");
+        div.innerHTML = data[i].title;
+        div1.innerHTML = data[i].value;
+      allCaseCount.append(div);
+      }
+    
+  
+  
+    
   })
   .catch(error => {
     console.log(error);
   })
 
 
-},{"axios":6,"cheerio":43}],6:[function(require,module,exports){
+},{"axios":6,"cheerio":43,"cheerio/lib/api/attributes":37}],6:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":8}],7:[function(require,module,exports){
 'use strict';

@@ -2212,11 +2212,16 @@ process.umask = function() { return 0; };
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const { data } = require('cheerio/lib/api/attributes');
 const url = 'https://economictimes.indiatimes.com/news/newsblogs/coronavirus-india-cases-update-covid-vaccine-latest-news-june-5/liveblog/msid-83252009,curpg-2.cms';
+// const dataa = document.getElementsByClassName("data")
+const button = document.querySelector(".btn");
 
+button.addEventListener("click",newss)
+function newss(){
 axios.get(url)
   .then(response => {
-    data = [];
+    let data = [];
     html=response.data;
     const $ = cheerio.load(html);
     $('.updateText').each((i, elem) => {
@@ -2225,12 +2230,22 @@ axios.get(url)
       });
     });
     console.log(data);
+    // dataa.innerText = data[2].title 
+    let tableData = document.querySelector(".table-data");
+    for(let i=1 ; i<data.length ; i++){
+      let div = document.createElement("div");
+      div.innerHTML = data[i].title;
+      tableData.append(div);
+    }
+
   })
   .catch(error => {
     console.log(error);
   })
+}
+
 // }); 
-},{"axios":6,"cheerio":43}],6:[function(require,module,exports){
+},{"axios":6,"cheerio":43,"cheerio/lib/api/attributes":37}],6:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":8}],7:[function(require,module,exports){
 'use strict';
