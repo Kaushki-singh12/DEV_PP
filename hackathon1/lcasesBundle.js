@@ -2225,14 +2225,10 @@ axios.get(url)
     let allCaseCount = document.querySelector(".allcasecount");
     for(let i=0; i<data.length; i++){
       let div = document.createElement("div");
-        div.innerHTML = data[i].title;
-        div1.innerHTML = data[i].value;
+        div.innerHTML = `${data[i].title} ${data[i].value}`;
+        // div.innerHTML = ;
       allCaseCount.append(div);
       }
-    
-  
-  
-    
   })
   .catch(error => {
     console.log(error);

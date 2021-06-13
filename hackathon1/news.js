@@ -6,9 +6,10 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { data } = require('cheerio/lib/api/attributes');
-const url = 'https://economictimes.indiatimes.com/news/newsblogs/coronavirus-india-cases-update-covid-vaccine-latest-news-june-5/liveblog/msid-83252009,curpg-2.cms';
-// const dataa = document.getElementsByClassName("data")
+const url = 'https://zeenews.india.com/latest-news';
+const dataa = document.getElementsByClassName("data")
 const button = document.querySelector(".btn");
+let count=0;
 
 button.addEventListener("click",newss)
 function newss(){
@@ -17,17 +18,19 @@ axios.get(url)
     let data = [];
     html=response.data;
     const $ = cheerio.load(html);
-    $('.updateText').each((i, elem) => {
+    $('.sec-con-box').each((i, elem) => {
       data.push({
-        title : $(elem).find('h3 ').text(),                 
+        Headline : $(elem).find('h3').text().trim(), 
+        Detail : $(elem).find('p').text().trim(),             
       });
     });
     console.log(data);
-    // dataa.innerText = data[2].title 
+    dataa.innerText = data[2].title 
     let tableData = document.querySelector(".table-data");
-    for(let i=1 ; i<data.length ; i++){
+    for(let i=0 ; i<data.length ; i++){
+      count++;
       let div = document.createElement("div");
-      div.innerHTML = data[i].title;
+      div.innerHTML = `${count}. ${data[i].Headline} ${data[i].Detail}  `;
       tableData.append(div);
     }
 
