@@ -21,28 +21,3 @@ fs.writeFile('resources.txt' ,(textContent) , function(err) {
 });
 
 })();
-// let allCaseCount = document.querySelector(".allResources");
-//       let div = document.createElement("div");
-//         div.innerHTML = './resources.txt';
-//       allCaseCount.append(div);
-      
-
-
-// ['#Covid19IndiaHelp #bedsavailability #ECMO #delhi',
-//   'Oxygen beds available without ECMO facility\n' +
-//     'New Delhi\n' +
-//     'Medeor Hospital, Qutab Institutional area, B 33-34, Block B.\n' +
-//     'Contact details - \n' +
-//     '01141222222\n' +
-//     'Verified \n' +]
-// [#Covid19IndiaHelp #bedsavailability #ECMO #delhi',
-//   '#verified \n' +]
-
-//     ['#oxygen available in #Delhi NCR("Krishna Market, Lajpat Nagar for refilling Tilak Nagar for Cans")\n' +
-//     '#"GURUDWARA SRI GURU SINGH SABHA B BLOCK\n' +
-//     'GK1 NEW DELHI"\n' +
-//     'contact no.  "8130184210\n' +
-//     '(Only whatsapp)"\n' +
-//     'Available\n' +
-//     'verified at  27/05 10:00 PM @JanBharat_Org',
-//   '#verified \n' +]

@@ -2213,7 +2213,8 @@ process.umask = function() { return 0; };
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { data } = require('cheerio/lib/api/attributes');
-const url = 'https://zeenews.india.com/latest-news';
+const url = 'https://zeenews.india.com/latest-news' ;
+// timeout : 5000}
 const dataa = document.getElementsByClassName("data")
 const button = document.querySelector(".btn");
 let count=0;
@@ -2223,8 +2224,8 @@ function newss(){
 axios.get(url)
   .then(response => {
     let data = [];
-    html=response.data;
-    const $ = cheerio.load(html);
+    body=response.data;
+    const $ = cheerio.load(body);
     $('.sec-con-box').each((i, elem) => {
       data.push({
         Headline : $(elem).find('h3').text().trim(), 
@@ -2234,7 +2235,7 @@ axios.get(url)
     console.log(data);
     dataa.innerText = data[2].title 
     let tableData = document.querySelector(".table-data");
-    for(let i=1 ; i<data.length ; i++){
+    for(let i=0 ; i<data.length-1; i++){
       count++;
       let div = document.createElement("div");
       div.innerHTML = `${count}. ${data[i].Headline} ${data[i].Detail}  `;
