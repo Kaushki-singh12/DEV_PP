@@ -1,4 +1,4 @@
-const { text } = require('cheerio/lib/static');
+// const { text } = require('cheerio/lib/static');
 const puppeteer = require('puppeteer');
 
 (async () => {
@@ -20,20 +20,20 @@ const linkContent = await page.evaluate(() =>{
 });
 console.table(textContent);
   console.table(linkContent);
-  let tableData = document.querySelector(".videolinks");
-  for(let i=1 ; i<textContent.length ; i++){
-    count++;
-    let div = document.createElement("div");
-    div.innerHTML = `${count}. ${textContent[i]}  `;
-    tableData.append(div);
-  }
-  let tableLinks = document.querySelector(".videolinks");
-  for(let i=1 ; i<linkContent.length ; i++){
-    count++;
-    let div = document.createElement("div");
-    div.innerHTML = `${count}. ${linkContent[i]}  `;
-    tableLinks.append(div);
-  }
+  // let tableData = document.querySelector(".videolinks");
+  // for(let i=1 ; i<textContent.length ; i++){
+  //   count++;
+  //   let div = document.createElement("div");
+  //   div.innerHTML = `${count}. ${textContent[i]}  `;
+  //   tableData.append(div);
+  // }
+  // let tableLinks = document.querySelector(".videolinks");
+  // for(let i=1 ; i<linkContent.length ; i++){
+  //   count++;
+  //   let div = document.createElement("div");
+  //   div.innerHTML = `${count}. ${linkContent[i]}  `;
+  //   tableLinks.append(div);
+  // }
 
   browser.close();
 })();
